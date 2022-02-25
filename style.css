@@ -1,0 +1,85 @@
+.carousel {
+    width:fit-content;
+    height:fit-content;
+}
+
+#imgcar1 {
+    filter: brightness(50%);
+}
+
+#imgcar2 {
+    filter: brightness(50%);
+}
+
+#imgcar3 {
+    filter: brightness(50%);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 88px;
+    z-index: 10;
+    opacity: 80%;
+    color: black;
+}
+
+
+.menu-logo {
+    filter: invert(44%) sepia(94%) saturate(3895%) hue-rotate(338deg) brightness(102%) contrast(83%);
+}
+
+.column {
+    float: left;
+    width: 25%;
+    height: 400px;
+  }
+
+.column#column1 {
+    background-color: #ffa09f;
+}
+.column#column2 {
+    background-color: #FF6E6B;
+}
+.column#column3 {
+    background-color: #EB4E4B;
+}
+.column#column4 {
+    background-color: #9E2523;
+}
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.pros {
+    margin: 50% 10% 10% 10%;
+    text-align: justify;
+    color: white;
+    opacity: 0%;
+}
+
+.pros:hover {
+    transition-duration: 2s;
+    opacity: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+    margin: 10% 10% 10% 10%;
+    text-align: justify;
+    line-break: normal;
+}
+ h1 {
+     margin: 10% 10% 10% 10%;
+     font-size: 72px;
+    background: -webkit-linear-gradient(rgb(255, 177, 177), #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
