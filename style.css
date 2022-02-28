@@ -1,3 +1,20 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap);
+    font-weight: normal;
+}
+
+:root {
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Roboto', cursive;
+    --fonte-roboto: 'Roboto', cursive;
+}
+
+
 .carousel {
     width:fit-content;
     height:fit-content;
@@ -64,22 +81,77 @@
     opacity: 0%;
 }
 
+
+@media screen and (max-width: 600px) { /* Make the row div only appear in desktop/tablet device */
+    .row {
+        visibility: hidden;
+    }
+}
+
 .pros:hover {
     transition-duration: 2s;
     opacity: 100%;
 }
 
 .container {
-    width: 100%;
-    height: 500px;
+    width: auto;
+    padding: 10px 10px 10px 10px;
     margin: 10% 10% 10% 10%;
     text-align: justify;
     line-break: normal;
 }
+
+.container2 {
+    width: auto;
+    height: 300px;
+    margin: 10% 10% 10% 10%;
+    text-align: justify;
+    line-break: normal;
+}
+
  h1 {
-     margin: 10% 10% 10% 10%;
-     font-size: 72px;
+    margin: 5% 5% 5% 5%;
+    font-size: 52px;
     background: -webkit-linear-gradient(rgb(255, 177, 177), #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+   
+   font-family: var(--fonte-padrao);
+}
+
+.formulario {
+    padding-top: 100px;
+}
+
+a.nav-link:link
+{
+   color: #424242;
+   text-decoration: none;
+}
+a.nav-link:visited
+{
+   color: #424242;
+   text-decoration: none;
+}
+a.nav-link:hover
+{
+   color: #424242;
+   text-decoration: none;
+}
+a.nav-link:active
+{
+   color: #424242;
+   text-decoration: none;
+}
+
+footer {
+    padding-top: 100px;
+    padding-bottom: 15px;
+    text-align: center;
+    bottom: 0;
 }
